@@ -46,7 +46,7 @@
             <!-- Hero Section -->
             <section id="about" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                    <div class="text-center">
+                    <div class="text-center" data-reveal>
                         <div class="mb-8">
                             <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-4xl font-bold text-white shadow-lg shadow-indigo-500/30">
                                 EB
@@ -54,7 +54,7 @@
                         </div>
                         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
                             <span class="text-white">Eajen Rainier S.</span>
-                            <span class="text-indigo-400"> Benabese</span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400"> Benabese</span>
                         </h1>
                         <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
                             BSIT Student | Dance Choreographer | Creative Designer
@@ -98,10 +98,10 @@
             <!-- Education Section -->
             <section id="education" class="py-20 bg-gray-900">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-bold text-center mb-12 text-white">Educational Background</h2>
-                    <div class="space-y-8">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white" data-reveal>Educational Background</h2>
+                    <div class="space-y-8" data-reveal-stagger>
                         <!-- Current Education -->
-                        <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors">
+                        <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors" data-reveal-item>
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@
                         </div>
 
                         <!-- Previous Education -->
-                        <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors">
+                        <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors" data-reveal-item>
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,10 +144,10 @@
             <!-- Experience Section -->
             <section id="experience" class="py-20 bg-gray-800">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-bold text-center mb-12 text-white">Work Experience</h2>
-                    <div class="space-y-8">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white" data-reveal>Work Experience</h2>
+                    <div class="space-y-8" data-reveal-stagger>
                         <!-- Dance Instructor -->
-                        <div class="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors">
+                        <div class="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors" data-reveal-item>
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -177,7 +177,7 @@
                         </div>
 
                         <!-- Work Immersion -->
-                        <div class="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors">
+                        <div class="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-indigo-500 transition-colors" data-reveal-item>
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -216,10 +216,11 @@
             <!-- Skills Section -->
             <section id="skills" class="py-20 bg-gray-900">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-bold text-center mb-12 text-white">Skills & Certifications</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white" data-reveal>Skills & Certifications</h2>
+                    <div class="grid md:grid-cols-2 gap-8" data-reveal-stagger>
+
                         <!-- Skills -->
-                        <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                        <div class="bg-gray-800 rounded-xl p-6 border border-gray-700" data-reveal-item>
                             <h3 class="text-xl font-semibold text-white mb-6">Technical Skills</h3>
                             <div class="space-y-4">
                                 <div>
@@ -280,8 +281,8 @@
                         </div>
 
                         <!-- Certifications & Languages -->
-                        <div class="space-y-6">
-                            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                        <div class="space-y-6" data-reveal-item>
+                            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700" data-reveal-item>
                                 <h3 class="text-xl font-semibold text-white mb-4">Certifications</h3>
                                 <div class="flex items-start">
                                     <div class="flex-shrink-0 w-10 h-10 bg-yellow-600 rounded-lg flex items-center justify-center">
@@ -296,7 +297,7 @@
                                 </div>
                             </div>
 
-                            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700" data-reveal-item>
                                 <h3 class="text-xl font-semibold text-white mb-4">Languages</h3>
                                 <div class="space-y-3">
                                     <div class="flex items-center justify-between">
@@ -317,10 +318,10 @@
             <!-- Projects Section -->
             <section id="projects" class="py-20 bg-gray-800">
                 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-bold text-center mb-12 text-white">Projects</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white" data-reveal>Projects</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" data-reveal-stagger>
                         <!-- Project 1 -->
-                        <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all hover:transform hover:scale-105">
+                        <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all hover:transform hover:scale-105" data-reveal-item>
                             <div class="h-48 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
                                 <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -344,7 +345,7 @@
                         </div>
 
                         <!-- Project 2 -->
-                        <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all hover:transform hover:scale-105">
+                        <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all hover:transform hover:scale-105" data-reveal-item>
                             <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
                                 <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
@@ -367,7 +368,7 @@
                         </div>
 
                         <!-- Project 3 -->
-                        <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all hover:transform hover:scale-105">
+                        <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all hover:transform hover:scale-105" data-reveal-item>
                             <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
                                 <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
@@ -394,7 +395,7 @@
 
             <!-- GitHub Links Section -->
             <section class="py-20 bg-gray-900">
-                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
                     <h2 class="text-3xl font-bold mb-8 text-white">Connect with Me</h2>
                     <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Check out my GitHub profile for more projects and contributions.</p>
                     <a href="https://github.com/benabeseeajen-hue" target="_blank" class="inline-flex items-center px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors border border-gray-700 hover:border-indigo-500">

@@ -12,7 +12,7 @@
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16 items-center">
                     <div class="flex-shrink-0">
-                        <span class="text-xl font-bold text-indigo-400">EB</span>
+                        <span class="text-lg font-bold text-indigo-400 tracking-tight">eajen.free.nf</span>
                     </div>
                     <div class="hidden md:flex space-x-8">
                         <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>

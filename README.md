@@ -74,6 +74,15 @@ php artisan serve
 
 8. Visit `http://localhost:8000` in your browser.
 
+## Deployment (InfinityFree)
+
+This portfolio is prepared for release on [InfinityFree](https://www.infinityfree.com) free hosting. Two helper files are included for that purpose:
+
+- `htdocs.htaccess` — An Apache `.htaccess` that rewrite-redirects all traffic to the `/public` folder. On InfinityFree this simulates setting the document root to `public` while keeping the full Laravel directory structure intact. In InfinityFree's control panel, rename/upload it as `.htaccess` in `htdocs`.
+- `.env.infinityfree` — A production-ready environment configuration (debug off, file-based sessions/cache, no database) already pre-filled with the application key. Rename it to `.env` in the uploaded app root.
+
+Upload the whole project to `htdocs` and the site will serve from `public`.
+
 ## Customization
 
 To customize the portfolio content, edit the following files:

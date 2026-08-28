@@ -31,3 +31,9 @@ This document records all prompts the user actually entered during the developme
 ### Task: [Refining the Prompt Log]
 * Prompt used: "rewrite with the actual prompts I put in"
 * Result/Output: Big Pickle confirmed that the terms recorded are the user's own inputs, not reconstructed theme prompts. It rewrote the logs to list each prompt exactly as the user typed it ("implement greatplan.md" and the user's responses), in the order used, start to finish.
+
+---
+
+### Task: [Committing Imported Source Files]
+* Prompt used: "update promptlogs with this newest prompt, commit newly imported files to repo. namely 'greatplan.md' & 'resume.md' with a comprehensive non vague commit message of course."
+* Result/Output: Big Pickle appended this entry to PROMPT_LOG.md and regenerated PROMPT_LOG.docx, then staged the imported greatplan.md and resume.md source files and committed them with a descriptive, non-vague commit message detailing the project plan and resume data added to the repository.

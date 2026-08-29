@@ -11,11 +11,15 @@ export default defineConfig({
             fonts: [
                 bunny('Instrument Sans', {
                     weights: [400, 500, 600],
+                    optimizedFallbacks: false,
                 }),
             ],
         }),
         tailwindcss(),
     ],
+    build: {
+        chunkSizeWarningLimit: 600,
+    },
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],

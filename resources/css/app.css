@@ -6,4 +6,133 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-canvas: #050505;
+    --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        background-color: #050505;
+    }
+
+    body {
+        background-color: #050505;
+        color: var(--color-zinc-300);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
+    }
+
+    ::selection {
+        background: rgba(99, 102, 241, 0.4);
+        color: #ffffff;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #050505;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 9999px;
+        border: 2px solid #050505;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.16);
+    }
+}
+
+/* Ambient static mesh fallback (renders when WebGL is unavailable) */
+.ambient-mesh {
+    background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.20), transparent 60%),
+        radial-gradient(ellipse 60% 40% at 90% 110%, rgba(168, 85, 247, 0.14), transparent 60%),
+        radial-gradient(ellipse 50% 40% at 8% 70%, rgba(34, 211, 238, 0.08), transparent 55%),
+        #050505;
+}
+
+/* Sub-pixel hairline hovers available to double-bezel shells */
+.bezel-hairline {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+        inset 0 1px 1px rgba(255, 255, 255, 0.06);
+}
+
+/* Hide the WebGL canvas behind a soft veil so text stays legible */
+.constellation-layer {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+/* Floating nav hardening after scroll */
+.nav-inner {
+    transition:
+        background-color 0.4s var(--ease-spring),
+        border-color 0.4s var(--ease-spring),
+        box-shadow 0.4s var(--ease-spring);
+}
+
+[data-navigation].nav-scrolled .nav-inner {
+    background-color: rgba(9, 9, 11, 0.92);
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow:
+        0 24px 48px -24px rgba(0, 0, 0, 0.9),
+        inset 0 1px 1px rgba(255, 255, 255, 0.07);
+}
+
+/* Ambient hero orbs */
+@keyframes orb-drift {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(34px, -24px, 0) scale(1.12);
+    }
+}
+
+.orb {
+    animation: orb-drift 13s var(--ease-spring) infinite alternate;
+}
+
+.orb-slow {
+    animation-duration: 19s;
+    animation-direction: alternate-reverse;
+}
+
+/* Scroll hint line */
+@keyframes scroll-hint {
+    0% {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    45% {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    55% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+
+    100% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+}
+
+.scroll-line {
+    animation: scroll-hint 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 }
